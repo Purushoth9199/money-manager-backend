@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production')
 {
 app.use('/' , express.static('hackathon/build'))
 app.get('*' , (req , res)=>{
-res.sendFile(path.resolve(_dirname , 'hackathon/build/index.html'))
+res.sendFile(path.resolve(__dirname , 'hackathon/build/index.html'))
 })
 }
 
